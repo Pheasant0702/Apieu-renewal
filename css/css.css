@@ -107,7 +107,20 @@ header> .header_wrap> div{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 21px;
+}
+.menu> ul> li{
+    width: 150px;
+    height: 60px;
+    background-color: tomato;
+}
+.menu> ul> li> a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.sub_menu{
+    display: none;
 }
 .img_slide{
     position: relative;

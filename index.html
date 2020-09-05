@@ -63,9 +63,103 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">카테고리+</a>
-                    <ul>
-                        <li><a href="#"></a></li>
+                    <a href="#" class="plus">카테고리+</a>
+                    <ul class="sub_menu">
+                        <li>
+                            <a href="#">기초 메이크업</a>
+                            <ul>
+                                <li><a href="#">클렌징</a></li>
+                                <li><a href="#">마스크팩</a></li>
+                                <li><a href="#">페이셜케어</a></li>
+                                <li><a href="#">선케어</a></li>
+                                <li><a href="#">기초 스킨케어 세트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">색조 메이크업</a>
+                            <ul>
+                                <li><a href="#">베이스</a></li>
+                                <li><a href="#">아이 메이크업</a></li>
+                                <li><a href="#">립 메이크업</a></li>
+                                <li><a href="#">네일 메이크업</a></li>
+                                <li><a href="#">색조 메이크업 세트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">바디</a>
+                            <ul>
+                                <li><a href="#">바디클렌징</a></li>
+                                <li><a href="#">바디보습</a></li>
+                                <li><a href="#">데오드란트</a></li>
+                                <li><a href="#">제모</a></li>
+                                <li><a href="#">핸드케어</a></li>
+                                <li><a href="#">풋.레그케어</a></li>
+                                <li><a href="#">여성용품/기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">헤어</a>
+                            <ul>
+                                <li><a href="#">헤어케어</a></li>
+                                <li><a href="#">헤어스타일링</a></li>
+                                <li><a href="#">염모제/펌제</a></li>
+                                <li><a href="#">헤어세트/기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">남성</a>
+                            <ul>
+                                <li><a href="#">남성 스킨케어</a></li>
+                                <li><a href="#">남성 메이크업</a></li>
+                                <li><a href="#">남성 바디케어</a></li>
+                                <li><a href="#">남성 헤어케어</a></li>
+                                <li><a href="#">남성뷰티 기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">립/풋/핸드</a>
+                            <ul>
+                                <li><a href="#">립 케어</a></li>
+                                <li><a href="#">핸드케어</a></li>
+                                <li><a href="#">풋, 레그케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">향수</a>
+                            <ul>
+                                <li><a href="#">공용향수</a></li>
+                                <li><a href="#">여성향수</a></li>
+                                <li><a href="#">남성향수</a></li>
+                                <li><a href="#">방향, 탈취제/룸스프레이</a></li>
+                                <li><a href="#">향수세트/기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">덴탈케어</a>
+                            <ul>
+                                <li><a href="#">치약</a></li>
+                                <li><a href="#">칫솔</a></li>
+                                <li><a href="#">치실/치간칫솔</a></li>
+                                <li><a href="#">전동칫솔/살균기</a></li>
+                                <li><a href="#">치아 미백</a></li>
+                                <li><a href="#">구강청결</a></li>
+                                <li><a href="#">치약핏솔 세트/기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">뷰티_소품/기기</a>
+                            <ul>
+                                <li><a href="#">페이스 소품</a></li>
+                                <li><a href="#">메이크업 브러시</a></li>
+                                <li><a href="#">아이메이크업 소품</a></li>
+                                <li><a href="#">바디 소품</a></li>
+                                <li><a href="#">네일 소품</a></li>
+                                <li><a href="#">헤어소품</a></li>
+                                <li><a href="#">미용기기</a></li>
+                                <li><a href="#">파우치/정리함</a></li>
+                                <li><a href="#">뷰티소품 기타</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -82,7 +176,7 @@
                 </li>
             </ul>
         </nav>
-        <section class="img_slide">
+        <!--<section class="img_slide">
             <div>
                 <a href="#">
                     <img src="/img/slide1.png" alt="">
@@ -123,9 +217,21 @@
                     <img src="/img/slide8.png" alt="">
                 </a>
             </div>
-        </section>
+        </section>-->
         <script type="text/javascript">
             $('.img_slide').slick();
+            $(document).ready(function(){
+
+                $(document).on('mouseover', '.plus', function () {
+                $('.sub_menu').slideDown(800);
+            });
+            $(document).on('mouseover', 'div', function () {
+                if (!$(this).hasClass('menu')) {
+                    $('.sub_menu').slideUp(200);
+                }
+
+            });
+            });
         </script>
         
         <!--<section class="best">
