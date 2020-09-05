@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어퓨</title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="/js/js.js"></script>
-    <script src="/js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/js/js.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -25,31 +28,33 @@
                     <a href="#"><img src="/img/어퓨_로고.png" alt="어퓨_로고"></a>
                 </div>
                 <div class="header_right">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">로그인</a>
-                            </li>
-                            <li>
-                                <a href="#">회원가입</a>
-                            </li>
-                            <li>
-                                <a href="#">주문배송조회</a>
-                            </li>
-                            <li>
-                                <a href="#">마이눙크</a>
-                            </li>
-                            <li>
-                                <a href="#">고객센터</a>
-                            </li>
-                            <li>
-                                <a href="#">멤버십안내</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="#">회원가입</a>
+                                </li>
+                                <li>
+                                    <a href="#">주문배송조회</a>
+                                </li>
+                                <li>
+                                    <a href="#">마이눙크</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객센터</a>
+                                </li>
+                                <li>
+                                    <a href="#">멤버십안내</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <div class="icon">
                         <a href="#"><img src="/img/ico-toolbar-user-min.png" alt="마이페이지_아이콘"></a>
-                        <a href="#"><img src="/img/ico-toolbar-cart-min.png" alt="장바구니"></a>
+                        <a href="#"><img src="/img/ico-toolbar-cart-min.png" alt="장바구니"></a> 
                         <a href="#"><img src="/img/ico-toolbar-recent-min.png" alt="타임세일"></a>
                     </div>
                 </div>
@@ -77,33 +82,53 @@
                 </li>
             </ul>
         </nav>
-        <!--<section id="imgslide">
-            <a href="#">
-                <img src="/img/slide1.png" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide2.jpg" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide3.png" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide4.png" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide5.png" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide6.png" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide7.png" alt="">
-            </a>
-            <a href="#">
-                <img src="/img/slide8.png" alt="">
-            </a>
+        <section class="img_slide">
+            <div>
+                <a href="#">
+                    <img src="/img/slide1.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide2.jpg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide3.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide4.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide5.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide6.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide7.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/img/slide8.png" alt="">
+                </a>
+            </div>
         </section>
-        <section class="best">
+        <script type="text/javascript">
+            $('.img_slide').slick();
+        </script>
+        
+        <!--<section class="best">
             <p>어퓨가 추천해요</p>
             <div class="panner">
                 <div>

@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: '나눔고딕';
+    font-family: '넥슨LV1고딕';
 }
 ul, li{
     list-style: none;
@@ -71,17 +71,9 @@ header> .header_wrap> div{
     margin: 0 auto;
 }
 /*로고*/
-.header_center> a{
-    width: 150px;
-    height: 100px;
-    margin: 30px 0px;
-    overflow: hidden;
-}
 .header_center> a> img{
     width: 100px;
     height: 100px;
-    bottom: 90px;
-    margin: 55px 20px;
     position: relative;
 }
 /*서브메뉴, 아이콘*/
@@ -89,30 +81,67 @@ header> .header_wrap> div{
     width: 500px;
     text-align: right;
 }
-.header_right> nav{
+.header_right> div> nav{
     width: 450px;
-    margin-left: 70px;
+    margin-left: 50px;
 }
-.header_right> nav> ul{
+.header_right> div> nav> ul{
     display: flex;
+    justify-content: space-between;
 }
-.header_right> nav> ul> li{
-    padding: 0px 10px;
+.header_right> .icon> a{
+    padding-left: 15px;
 }
 .header_right> .icon> a> img{
-    padding-left: 15px;
+    width: 27px;
+    height: 25px;
 }
 .menu{
     background-color: #87ffcf;
     height: 60px;
     text-align: center;
-    font-size: 15px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .menu> ul{
     width: 1100px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 21px;
+}
+.img_slide{
+    position: relative;
+}
+.img_slide button{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background:rgba(255,255,255,.5);
+}
+.img_slide button::before{
+    font-family: 'xeicon';
+    color: #000;
+    font-size: 35px;
+}
+.img_slide button.slick-prev{
+    left: 50px;
+    font-size: 0;
+    color: transparent;
+}
+.img_slide button.slick-prev::before{
+    content: "\e93d";
+}
+.img_slide button.slick-next{
+    right: 50px;
+    font-size: 0;
+    color: transparent;
+}
+.img_slide button.slick-next::before{
+    content: "\e940";
 }
