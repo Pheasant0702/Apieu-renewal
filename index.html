@@ -176,113 +176,117 @@
                 </li>
             </ul>
         </nav>
-        <!--<section class="img_slide">
-            <div>
-                <a href="#">
-                    <img src="/img/slide1.png" alt="">
-                </a>
+        <section id="img_slide">
+            <div class="img_slide">
+                <div>
+                    <a href="#">
+                        <img src="/img/slide1.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide2.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide3.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide4.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide5.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide6.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide7.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/img/slide8.png" alt="">
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide2.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide3.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide4.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide5.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide6.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide7.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="/img/slide8.png" alt="">
-                </a>
-            </div>
-        </section>-->
+        </section>
         <script type="text/javascript">
             $('.img_slide').slick();
-            $(document).ready(function(){
-
-                $(document).on('mouseover', '.plus', function () {
+            $(document).on('mouseover', '.plus', function () {
                 $('.sub_menu').slideDown(800);
             });
             $(document).on('mouseover', 'div', function () {
                 if (!$(this).hasClass('menu')) {
                     $('.sub_menu').slideUp(200);
                 }
-
-            });
             });
         </script>
         
-        <!--<section class="best">
-            <p>어퓨가 추천해요</p>
-            <div class="panner">
-                <div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>마데카소사이드 크림 2X 기획세트</p>
-                        <p>10,400원</p>
-                    </div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>과즙팡 컬러 립밤</p>
-                        <p>7,200원</p>
-                    </div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>리얼 앰플 마스크 마데카소사이드</p>
-                        <p>1,600원</p>
-                    </div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>타투팡 아이라이너</p>
-                        <p>3,400원</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>풀샷 글램 아이 글리터</p>
-                        <p>9,800원</p>
-                    </div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>딥 클린 폼 클렌저(촉촉)</p>
-                        <p>3,300원</p>
-                    </div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>산뽕나무 잡티 앰플 대용량 태연 기획 세트</p>
-                        <p>27,000원</p>
-                    </div>
-                    <div>
-                        <img src="/img/추천1.jpg" alt="">
-                        <p>과즙팡 무스 틴트</p>
-                        <p>4,500원</p>
+        <section id="best">
+            <div class="best_wrap">
+                <div class="one1"></div>
+                <div class="one2"></div>
+                <div class="best">
+                    <p>어퓨가 추천해요!</p>
+                    <div class="panner">
+                        <div>
+                            <a href="#">
+                                <img src="/img/추천1.jpg" alt="">
+                                <p>마데카소사이드 크림 2X 기획세트</p>
+                                <p>10,400원</p>
+                            </a>
+                            <a href="#">
+                                <img src="/img/추천2.jpg" alt="">
+                                <p>과즙팡 컬러 립밤</p>
+                                <p>7,200원</p>
+                            </a>
+                            <a href="#">
+                                <img src="/img/추천3.jpg" alt="">
+                                <p>리얼 앰플 마스크 마데카소사이드</p>
+                                <p>1,600원</p>
+                            </a>
+                            <a href="#">
+                                <img src="/img/추천4.jpg" alt="">
+                                <p>타투팡 아이라이너</p>
+                                <p>3,400원</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="/img/추천5.jpg" alt="">
+                                <p>풀샷 글램 아이 글리터</p>
+                                <p>9,800원</p>
+                            </a>
+                            <a href="#">
+                                <img src="/img/추천6.jpg" alt="">
+                                <p>딥 클린 폼 클렌저(촉촉)</p>
+                                <p>3,300원</p>
+                            </a>
+                            <a href="#">
+                                <img src="/img/추천7.jpg" alt="">
+                                <p>산뽕나무 잡티 앰플 대용량 태연 기획 세트</p>
+                                <p>27,000원</p>
+                            </a>
+                            <a href="#">
+                                <img src="/img/추천8.jpg" alt="">
+                                <p>과즙팡 무스 틴트</p>
+                                <p>4,500원</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
     </div>
     
 </body>
