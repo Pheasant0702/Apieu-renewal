@@ -367,3 +367,109 @@ header> .header_wrap> div{
     width: 20px;
     height: 20px;
 }
+/*---- 베스트 코너 ----*/
+#best{
+    width: 100%;
+    height: 900px;
+    background-color: darkorange;
+}
+.best{
+    width: 1050px;
+    height: 800px;
+    background-color: darksalmon;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.best> p{
+    width: 250px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    border-bottom: 15px #87ffcf solid;
+}
+.best> ul{
+    width: 1050px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+.best> ul> li{
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    background-color: darkslateblue;
+}
+.best> ul> li> a{
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.best> .best_panner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.best> .best_panner> div:nth-child(1){
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.best> .best_panner> div:nth-child(1)> img:nth-child(1){
+    width: 200px;
+    position: absolute;
+    left: 85px;
+    top: 17px;
+}
+.best> .best_panner> div:nth-child(2){
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.best> .best_panner> div:nth-child(2)> div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.best> .best_panner> div:nth-child(2)> div> a{
+    width: 100%;
+    height: 50%;
+}
+.best> .best_panner> div{
+    display: flex;
+}
+.best> .best_panner> div:nth-child(2)> div{
+    display: flex;
+    justify-content: space-between;
+}
+.best> .best_panner> div:nth-child(1)> a{
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #ccc;
+}
+.best> .best_panner> div:nth-child(1)> a> img{
+    width: 250px;
+    height: 250px;
+    margin-top: 25px;
+}
+.best> .best_panner> div:nth-child(2)> div> a> img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+.best> .best_panner> div:nth-child(2)> div>  a{
+    width: 200px;
+    height: 260px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #ccc;
+    text-align: center;
+}
