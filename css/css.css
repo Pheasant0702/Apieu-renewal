@@ -553,11 +553,93 @@ header> .header_wrap> div{
     font-weight: 600;
 }
 #banner_img{
-    width: 100%;
+    width: 1500px;
     height: 100%;
     margin: 0 auto;
     float: none;
+    margin: 0 auto;
+    overflow: hidden;
 }
 #banner_img> img{
     margin: 0 auto;
+}
+#pick{
+    width: 100%;
+    height: 900px;
+    /*background-color: khaki;*/
+    position: relative;
+}
+.pick_more>  p{
+    width: 330px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    border-bottom: 15px #87ffcf solid;
+}
+#pick> div:nth-child(2){
+    width: 1050px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 250px;
+}
+#pick> div:nth-child(2)> .pick_img{
+    width: 50%;
+    height: 100%;
+}
+#pick> div:nth-child(2)> .pick_img> img{
+    width: 100%;
+    box-shadow: 3px 3px #ccc;
+}
+#pick> div:nth-child(2)> .pick_more{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#pick> div:nth-child(2)> .pick_more> div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+#pick> div:nth-child(2)> .pick_more> .one8{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    background-color: #87ffcf;
+    position: absolute;
+    z-index: -10;
+    top: 100px;
+    left: 120px;
+}
+#pick> div:nth-child(2)> .pick_more> div> a{
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 3px 3px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+#pick> div:nth-child(2)> .pick_more> div> a:nth-child(1){
+    margin-top: 100px;
+}
+#pick> div:nth-child(2)> .pick_more> div> a> img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+#pick> div:nth-child(2)> .pick_more> div> a> p{
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 600;
+}
+#pick> div:nth-child(2)> .pick_more> div> a> p:nth-child(2){
+    font-weight: 400;
+    margin-top: 10px;
+    height: 45px;
 }
